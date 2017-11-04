@@ -33,35 +33,40 @@
       </section>
 
       <form action="#" method="post">
-        <b class="options"> Стоимость </b>
-        <input type="range" name="price" id="price-field"  min="0" max="15000" step="1">
+        <fieldset>
+          <legend class="options"> Стоимость </legend>
+            <input type="range" name="price" id="price-field"  min="0" max="15000" step="1">
 
-        <input class="range" type="text" name="from" id="from-field" value="0" >
-        <label for="from-field">От</label>
-        <input class="range" type="text" name="to" id="to-field" value="15000" >
-        <label for="to-field">До</label>
+            <input class="range" type="text" name="from" id="from-field" value="0" >
+            <label for="from-field">От</label>
+            <input class="range" type="text" name="to" id="to-field" value="15000" >
+            <label for="to-field">До</label>
+       </fieldset>
 
-        <b class="options"> Сетка </b>
-        <input type="radio" name="adaptive" id="adaptive-field" checked>
-        <label for="adaptive-field">Адаптивная</label>
-        <input type="radio" name="fixed" id="fixed-field" >
-        <label for="fixed-field">Фиксированная</label>
-        <input type="radio" name="rubber" id="rubber-field" >
-        <label for="rubber-field">Резиновая</label>
+       <fieldset>
+         <legend class="options"> Сетка </legend>
+           <input type="radio" name="adaptive" id="adaptive-field" checked>
+          <label for="adaptive-field">Адаптивная</label>
+          <input type="radio" name="fixed" id="fixed-field" >
+          <label for="fixed-field">Фиксированная</label>
+          <input type="radio" name="rubber" id="rubber-field" >
+          <label for="rubber-field">Резиновая</label>
+        </fieldset>
 
-        <b class="options"> Особенности </b>
-        <input type="checkbox" name="slider" id="slider-field" checked>
-        <label for="slider-field">Слайдер</label>
-        <input type="checkbox" name="advantageblock" id="advantageblock-field" >
-        <label for="advantageblock-field">Блок преимуществ</label>
-        <input type="checkbox" name="news" id="news-field" checked>
-        <label for="news-field">Новости</label>
-        <input type="checkbox" name="gallery" id="gallery-field" >
-        <label for="gallery-field">галерея</label>
-        <input type="checkbox" name="basket" id="basket-field" >
-        <label for="basket-field">корзина</label>
+
+        <fieldset>
+          <legend class="options"> Особенности </legend>
+            <input type="checkbox" name="slider" id="slider-field" checked>
+            <label for="slider-field">Слайдер</label>
+            <input type="checkbox" name="advantageblock" id="advantageblock-field" >
+            <label for="advantageblock-field">Блок преимуществ</label>
+            <input type="checkbox" name="news" id="news-field" checked>
+            <label for="news-field">Новости</label>
+            <input type="checkbox" name="gallery" id="gallery-field" >
+            <label for="gallery-field">галерея</label>
+            <input type="checkbox" name="basket" id="basket-field" >
+            <label for="basket-field">корзина</label>
+         </fieldset>
 
         <input class="button" type="submit" value="Показать" >
       </form>
-
-      
