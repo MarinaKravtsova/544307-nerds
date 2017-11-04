@@ -7,13 +7,13 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
+        <a class="main-header-logo" href="index.html">
         <img src="img/index-logo.svg" width="250" height="150" alt="логотип студии <Нёрдс>">
         </a>
         <ul class="site-navigation">
           <li><a href="studio.html">Студия</a></li>
           <li><a href="clients.html">Клиенты</a></li>
-          <li><a href="store.html">Магазин</a></li>
+          <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
@@ -24,37 +24,36 @@
 
     <main class="container">
 
-      <h1 class="visually-hidden">Студия<Нёрдс></h1>
+      <h1 class="container-title">Магазин готовых шаблонов</h1>
 
-      <section class="shop-container">
+   <section class="filters">
 
-        <h2 class="shop-container-heading">Магазин готовых шаблонов</h2>
-
-      </section>
+        <h2 class="visually-hidden">Фильтр товаров</h2>
 
       <form action="#" method="post">
         <fieldset>
           <legend class="options"> Стоимость </legend>
             <input type="range" name="price" id="price-field"  min="0" max="15000" step="1">
 
-            <input class="range" type="text" name="from" id="from-field" value="0" >
             <label for="from-field">От</label>
-            <input class="range" type="text" name="to" id="to-field" value="15000" >
+            <input class="range" type="text" name="from" id="from-field" value="0" >
             <label for="to-field">До</label>
-       </fieldset>
+            <input class="range" type="text" name="to" id="to-field" value="15000" >
 
-       <fieldset>
-         <legend class="options"> Сетка </legend>
-           <input type="radio" name="adaptive" id="adaptive-field" checked>
+        </fieldset>
+
+        <fieldset>
+          <legend class="options"> Сетка </legend>
+          <input type="radio" name="adaptive" id="adaptive-field" checked>
           <label for="adaptive-field">Адаптивная</label>
           <input type="radio" name="fixed" id="fixed-field" >
           <label for="fixed-field">Фиксированная</label>
           <input type="radio" name="rubber" id="rubber-field" >
           <label for="rubber-field">Резиновая</label>
-        </fieldset>
 
+         </fieldset>
 
-        <fieldset>
+         <fieldset>
           <legend class="options"> Особенности </legend>
             <input type="checkbox" name="slider" id="slider-field" checked>
             <label for="slider-field">Слайдер</label>
@@ -66,7 +65,141 @@
             <label for="gallery-field">галерея</label>
             <input type="checkbox" name="basket" id="basket-field" >
             <label for="basket-field">корзина</label>
-         </fieldset>
+          </fieldset>
 
         <input class="button" type="submit" value="Показать" >
       </form>
+    </section>
+
+      <section class="sort">
+        <b> Сортировать </b>
+        <ul class="sort-types">
+          <li><a href="price.html">По цене</a></li>
+          <li><a href="type.html">По типу</a></li>
+          <li><a href="name.html">По названию</a></li>
+        </ul>
+        <button class="sort-up" type="button"></button>
+        <button class="sort-down" type="button"></button>
+      </section>
+
+      <section class="catalog">
+        <h2 class="visually-hidden">Список сайтов</h2>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <img src="img/sedona.jpg" width="160" height="220" alt="Седона" >
+
+            <section class="sedona-hover">
+              <a href="catslog-item.html">
+                <h3>Sedona</h3>
+                <p>Информационный сайт для туристов</p>
+              </a>
+              <a class="button" href="#">9 900 руб.</a>
+            </section>
+          </li>
+          <li class="catalog-item">
+            <img src="img/pink.jpg" width="160" height="220" alt="Пинк" >
+
+            <section class="pink-hover">
+              <a href="catslog-item.html">
+                <h3>Pink App</h3>
+                <p>Продуктовый лендинг приложения для iOS и Android</p>
+              </a>
+              <a class="button" href="#">9 900 руб.</a>
+            </section>
+          </li>
+          <li class="catalog-item">
+            <img src="img/barbershop.jpg" width="160" height="220" alt="Барбершоп" >
+
+            <section class="barbershop-hover">
+              <a href="catslog-item.html">
+                <h3>Barbershop</h3>
+                <p>Сайт салона красоты. Для мужчин, да.</p>
+              </a>
+              <a class="button" href="#">9 900 руб.</a>
+            </section>
+          </li>
+          <li class="catalog-item">
+            <img src="img/mishka.jpg" width="160" height="220" alt="Мишка" >
+
+            <section class="mishka-hover">
+              <a href="catslog-item.html">
+                <h3>Mishka</h3>
+                <p>Интернет-магазин вязанных игрушек</p>
+              </a>
+              <a class="button" href="#">9 900 руб.</a>
+            </section>
+          </li>
+          <li class="catalog-item">
+            <img src="img/aplus.jpg" width="160" height="220" alt="А плюс" >
+
+            <section class="aplus-hover">
+              <a href="catslog-item.html">
+                <h3>A plus</h3>
+                <p>Лендинг курсов повышения квалификации</p>
+              </a>
+              <a class="button" href="#">9 900 руб.</a>
+            </section>
+          </li>
+          <li class="catalog-item">
+            <img src="img/kvast.jpg" width="160" height="220" alt="Кваст" >
+
+            <section class="kvast-hover">
+              <a href="catslog-item.html">
+                <h3>Кваст</h3>
+                <p>Промо-сайт производителя крафтового кваса</p>
+              </a>
+              <a class="button" href="#">9 900 руб.</a>
+            </section>
+          </li>
+        </ul>
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-current"><a>1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">Следующая</a></li>
+        </ul>
+      </section>
+
+   </main>
+
+      <footer class="main-footer">
+         <p class="footer-contacts">
+           <b> nerds design studio </b>
+           191186, Санкт-Петербург,<br>
+           ул.Б.Конюшенная, д.19/8<br>
+           тел.+7(812)275-75-75<br>
+           <a href="writeus.html">Напишите нам</a>
+         </p>
+         <div class="footer-map">
+           <h2 class="visually-hidden">Как до нас добраться</h2>
+           <a href="map.html">карта</a>
+         </div>
+         <div class="footer-social">
+           <b>Давайте дружить, это выгодно!</b>
+           <p>Скидка 10% для друзей из социальных сетей.</p>
+           <ul>
+             <li><a class="social-button" href="#">Вконтакте</a></li>
+             <li><a class="social-button" href="#">Фейсбук</a></li>
+             <li><a class="social-button" href="#">Инстаграм</a></li>
+           </ul>
+         </div>
+       </footer>
+
+       <section class="modal-writeus">
+         <h2>Напишите нам</h2>
+         <form action="https" method="post">
+           <label for="name-field">Ваше имя:</label>
+           <input type="text" name="name" id="name-field">
+
+           <label for="e-mail-field">Ваш e-mail:</label>
+           <input type="text" name="e-mail" id="e-mail-field">
+
+           <label for="letter-field">Текст письма:</label>
+           <textarea name="letter" id="letter-field">В свободной форме</textarea>
+
+           <input type="submit" value="Отправить">
+         </form>
+       </section>
+
+</body>
+</html>
