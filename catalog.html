@@ -5,38 +5,36 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-<div class="full-block-header">
-<div class="container-header">
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-        <img src="img/index-logo.svg" width="250" height="150" alt="логотип студии <Нёрдс>">
-        </a>
-        <ul class="site-navigation">
-          <li><a href="studio.html">Студия</a></li>
-          <li><a href="clients.html">Клиенты</a></li>
-          <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-      <div class="site-navigation">
-          <a href="basket.html">корзина</a>
-      </div>
-    </nav>
-  </header>
-</div>
-</div>
+      <header class="main-header">
+            <div class="container-header">
+              <nav class="main-navigation">
+                <a class="main-header-logo">
+                <img src="img/index-logo.svg" width="250" height="150" alt="логотип студии Нёрдс">
+                </a>
+                <ul class="site-navigation">
+                  <li><a href="studio.html">Студия</a></li>
+                  <li><a href="clients.html">Клиенты</a></li>
+                  <li><a href="catalog.html">Магазин</a></li>
+                  <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+                <div class="site-navigation">
+                    <a href="basket.html">корзина</a>
+                </div>
+              </nav>
+          </div>
+       </header>
 
 
-<div class="full-block-title">
+<div class="block-title">
 
-      <h1 class="container-title">Магазин готовых шаблонов</h1>
+      <h1 class="title">Магазин готовых шаблонов</h1>
 
 </div>
 
-<div class="main-full-block">
-<div class="main-container">
+<div class="products">
+<div class="container-products">
 
-    <div class="full-block-filters">
+   <div class="products-filters">
 
         <h2 class="visually-hidden">Фильтр товаров</h2>
 
@@ -78,11 +76,12 @@
           </fieldset>
 
         <input class="button" type="submit" value="Показать" >
-      </form>
-  </div>
+       </form>
+   </div>
 
-<div class="full-block">
-  <div class="container-sort">
+   <div class="products-result">
+
+     <div class="sort">
         <b> Сортировать </b>
         <ul class="sort-types">
           <li><a href="price.html">По цене</a></li>
@@ -91,81 +90,87 @@
         </ul>
         <button class="sort-up" type="button"></button>
         <button class="sort-down" type="button"></button>
-  </div>
+    </div>
 
-  <div class="container-catalog">
+    <div class="catalog">
         <h2 class="visually-hidden">Список сайтов</h2>
         <ul class="catalog-list">
+
           <li class="catalog-item">
             <img src="img/sedona.jpg" width="160" height="220" alt="Седона" >
 
-            <section class="sedona-hover">
+            <div class="sedona-hover">
               <a href="catslog-item.html">
                 <h3>Sedona</h3>
                 <p>Информационный сайт для туристов</p>
               </a>
               <a class="button" href="#">9 900 руб.</a>
-            </section>
+          </div>
           </li>
+
           <li class="catalog-item">
             <img src="img/pink.jpg" width="160" height="220" alt="Пинк" >
 
-            <section class="pink-hover">
+            <div class="pink-hover">
               <a href="catslog-item.html">
                 <h3>Pink App</h3>
                 <p>Продуктовый лендинг приложения для iOS и Android</p>
               </a>
               <a class="button" href="#">9 900 руб.</a>
-            </section>
+            </div>
           </li>
+
           <li class="catalog-item">
             <img src="img/barbershop.jpg" width="160" height="220" alt="Барбершоп" >
 
-            <section class="barbershop-hover">
+            <div class="barbershop-hover">
               <a href="catslog-item.html">
                 <h3>Barbershop</h3>
                 <p>Сайт салона красоты. Для мужчин, да.</p>
               </a>
               <a class="button" href="#">9 900 руб.</a>
-            </section>
+            </div>
           </li>
+
           <li class="catalog-item">
             <img src="img/mishka.jpg" width="160" height="220" alt="Мишка" >
 
-            <section class="mishka-hover">
+            <div class="mishka-hover">
               <a href="catslog-item.html">
                 <h3>Mishka</h3>
                 <p>Интернет-магазин вязанных игрушек</p>
               </a>
               <a class="button" href="#">9 900 руб.</a>
-            </section>
+            </div>
           </li>
+
           <li class="catalog-item">
             <img src="img/aplus.jpg" width="160" height="220" alt="А плюс" >
 
-            <section class="aplus-hover">
+            <div class="aplus-hover">
               <a href="catslog-item.html">
                 <h3>A plus</h3>
                 <p>Лендинг курсов повышения квалификации</p>
               </a>
               <a class="button" href="#">9 900 руб.</a>
-            </section>
+            </div>
           </li>
+
           <li class="catalog-item">
             <img src="img/kvast.jpg" width="160" height="220" alt="Кваст" >
 
-            <section class="kvast-hover">
+            <div class="kvast-hover">
               <a href="catslog-item.html">
                 <h3>Кваст</h3>
                 <p>Промо-сайт производителя крафтового кваса</p>
               </a>
               <a class="button" href="#">9 900 руб.</a>
-            </section>
+            </div>
           </li>
         </ul>
     </div>
 
-    <div class="container-pagination">
+    <div class="pagination">
         <ul class="pagination-list">
           <li class="pagination-item pagination-item-current"><a>1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
@@ -174,7 +179,11 @@
         </ul>
     </div>
 
+   </div>
+
 </div>
+</div>
+
 
 <footer class="main-footer">
     <div class="footer-map">
@@ -188,7 +197,7 @@
      тел.+7(812)275-75-75<br>
      <a class="button button-writeus button-red" href="writeus.html">Напишите нам</a>
    </p>
-  </div>
+   </div>
    <div class="footer-social">
      <b>Давайте дружить, это выгодно!</b>
      <p>Скидка 10% для друзей из социальных сетей.</p>
@@ -198,9 +207,9 @@
        <li><a class="social-button" href="#">Инстаграм</a></li>
      </ul>
    </div>
- </footer>
+</footer>
 
- <div class="modal-writeus">
+<div class="modal-writeus">
    <h2>Напишите нам</h2>
    <form action="https" method="post">
      <label for="name-field">Ваше имя:</label>
@@ -216,8 +225,6 @@
    </form>
 </div>
 
-</div>
-</div>
 
-</body>
-</html>
+  </body>
+  </html>
