@@ -20,7 +20,7 @@
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
       <div class="site-navigation">
-        <a href="basket.html">корзина</a>
+        <a class="site-navigation" href="basket.html">корзина</a>
       </div>
     </nav>
 
@@ -37,13 +37,13 @@
     <input type="radio" id="switch-2" name="slider-switch" >
     <input type="radio" id="switch-3" name="slider-switch" >
 
-    <label for="switch-1"></label>
-    <label for="switch-2"></label>
-    <label for="switch-3"></label>
+    <label for="switch-1" aria-label="Переключатель слайда-1"></label>
+    <label for="switch-2" aria-label="Переключатель слайда-2"></label>
+    <label for="switch-3" aria-label="Переключатель слайда-3"></label>
 
     <section class="slider-container-slide-1" id="slide-1">
       <img src="img/slider-1.png" width="760" height="431" alt="Слайдер-1">
-      <p><b>Долго, дорого,скрупулезно.</b></p>
+      <p><b>Долго, дорого, скрупулезно.</b></p>
       <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
       <a class="button button-slide button-red" href="knowmore.html">Узнать больше</a>
     </section>
@@ -124,7 +124,8 @@
    <div class="container">
 
        <ul class="projects-list">
-         <li><img src="img/htmlacademy.png" width="199" height="68" alt="Логотип академии"></li>
+         <li><a href="https://htmlacademy.ru/intensive/htmlcss">
+         <img src="img/htmlacademy.png" width="199" height="68" alt="Логотип академии" aria-label="Сайт HTMLacademy"></a></li>
          <li><img src="img/borodinski.png" width="209" height="90" alt="Логотип барбершопа бородинский"></li>
          <li><img src="img/pink.png" width="185" height="52" alt="Логотип магазина пинк"></li>
          <li><img src="img/mishka.png" width="173" height="84" alt="Логотип магазина мишка"></li>
@@ -139,7 +140,7 @@
 
       <div class="footer-map">
          <h2 class="visually-hidden">Как до нас добраться</h2>
-         <img src="img/map.png" width="1725" height="808" alt="Карта офиса по адресу улица Б.Конюшенная, 19/8">
+         <img src="img/map.png" width="1440" height="785" alt="Карта офиса по адресу улица Б.Конюшенная, 19/8, Санкт-Петербург">
       </div>
       <div class="footer-contacts">
          <p><b>Nerds design studio</b>
@@ -153,9 +154,9 @@
          <b>Давайте дружить, это выгодно!</b>
          <p>Скидка 10% для друзей из социальных сетей.</p>
              <ul>
-               <li><a class="social-button" href="#">Вконтакте</a></li>
-               <li><a class="social-button" href="#">Фейсбук</a></li>
-               <li><a class="social-button" href="#">Инстаграм</a></li>
+               <li><a class="social-button visually-hidden" href="#">Вконтакте</a></li>
+               <li><a class="social-button visually-hidden" href="#">Фейсбук</a></li>
+               <li><a class="social-button visually-hidden" href="#">Инстаграм</a></li>
              </ul>
       </div>
 
@@ -165,18 +166,25 @@
 
 <div class="modal-writeus">
    <h2>Напишите нам</h2>
-   <form action="https" method="post">
-     <label for="name-field">Ваше имя:</label>
-     <input type="text" name="name" id="name-field">
+   <form class="modal-writeus-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="modal-writeus-item">
+        <label for="modal-writeus-name">Ваше имя:</label>
+        <input type="text" name="name" value="" placeholder="Представьтесь, пожалуйста" id="modal-writeus-name">
+      </p>
 
-      <label for="e-mail-field">Ваш e-mail:</label>
-      <input type="text" name="e-mail" id="e-mail-field">
+      <p class="modal-writeus-item">
+        <label for="modal-writeus-e-mail">Ваш e-mail:</label>
+        <input type="text" name="e-mail" value="" placeholder="Для отправки ответа" id="modal-writeus-e-mail">
+      </p>
 
-      <label for="letter-field">Текст письма:</label>
-      <textarea name="letter" id="letter-field">В свободной форме</textarea>
+      <p class="modal-writeus-item">
+       <label for="modal-writeus-letter">Текст письма:</label>
+       <input type="text" name="text" value="" placeholder="В свободной форме" id="modal-writeus-letter">
+      </p>
 
-      <input type="submit" value="Отправить">
+      <button class="button" type="submit">Отправить</button>
     </form>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
 </div>
 
   </body>
