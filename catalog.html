@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-<body>
+<body class="inner-page">
 
 <header class="main-header">
   <div class="container">
@@ -16,7 +19,7 @@
       <ul class="site-navigation">
         <li><a href="studio.html">Студия</a></li>
         <li><a href="clients.html">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
+        <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
       <div class="site-navigation">
@@ -55,25 +58,25 @@
            <fieldset>
              <legend class="options">Сетка</legend>
              <input  class="visually-hidden products-filters-input products-filters-input-radio" type="radio" name="product-group" value="adaptive" id="adaptive-field" checked>
-             <label for="adaptive-field">Адаптивная</label>
+             <label class="grid" for="adaptive-field">Адаптивная</label>
              <input class="visually-hidden products-filters-input products-filters-input-radio" type="radio" name="product-group" value="fixed" id="fixed-field" >
-             <label for="fixed-field">Фиксированная</label>
+             <label class="grid" for="fixed-field">Фиксированная</label>
              <input class="visually-hidden products-filters-input products-filters-input-radio" type="radio" name="product-group" value="rubber" id="rubber-field" >
-             <label for="rubber-field">Резиновая</label>
+             <label class="grid" for="rubber-field">Резиновая</label>
           </fieldset>
 
           <fieldset>
             <legend class="options">Особенности</legend>
             <input class="visually-hidden products-filters-input products-filters-input-checkbox" type="checkbox" name="slider" id="slider-field" checked>
-            <label for="slider-field">Слайдер</label>
+            <label class="grid" for="slider-field">Слайдер</label>
             <input class="visually-hidden products-filters-input products-filters-input-checkbox" type="checkbox" name="advantageblock" id="advantageblock-field" >
-            <label for="advantageblock-field">Блок преимуществ</label>
+            <label class="grid" for="advantageblock-field">Блок преимуществ</label>
             <input class="visually-hidden products-filters-input products-filters-input-checkbox" type="checkbox" name="news" id="news-field" checked>
-            <label for="news-field">Новости</label>
+            <label class="grid" for="news-field">Новости</label>
             <input class="visually-hidden products-filters-input products-filters-input-checkbox" type="checkbox" name="gallery" id="gallery-field" >
-            <label for="gallery-field">галерея</label>
+            <label class="grid" for="gallery-field">Галерея</label>
             <input class="visually-hidden products-filters-input products-filters-input-checkbox" type="checkbox" name="basket" id="basket-field" >
-            <label for="basket-field">корзина</label>
+            <label class="grid" for="basket-field">Корзина</label>
           </fieldset>
 
             <button class="products-filters button" type="submit">Показать</button>
@@ -88,8 +91,10 @@
           <li><a href="type.html">По типу</a></li>
           <li><a href="name.html">По названию</a></li>
         </ul>
-        <button class="sort-up" type="button" aria-label="Сортировка по возрастанию"></button>
-        <button class="sort-down" type="button" aria-label="Сортировка по убыванию"></button>
+        <ul class="sort-up-down">
+          <li><a href="#" aria-label="Сортировка по возрастанию"></a></li>
+          <li><a href="#" aria-label="Сортировка по убыванию"></a></li>
+        </ul>
      </div>
 
      <div class="catalog">
