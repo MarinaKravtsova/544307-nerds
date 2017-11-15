@@ -66,7 +66,7 @@ a {
 }
 
 .site-navigation a:focus {
-  color: #d1d1d1;
+  color: #000000;
   opacity: 0.3;
 }
 
@@ -276,7 +276,6 @@ a {
 
 .products-filters-button:focus {
   background-color: #d5d5d5;
-  opacity: 0.3;
 }
 
 .sort-types,
@@ -327,26 +326,27 @@ a {
   list-style: none;
 }
 
-.sedona-hover,
-.pink-hover,
-.barbershop-hover,
-.mishka-hover,
-.aplus-hover,
-.kvast-hover {
+.catalog-item-hover {
   height: 231px;
   width: 360px;
   background-color: #eeeeee;
 
 }
 
-.sedona-hover a,
-.pink-hover a,
-.barbershop-hover a,
-.mishka-hover a,
-.aplus-hover a,
-.kvast-hover a {
+.catalog-item-hover a {
   color: #000000;
 }
+
+.catalog-item-hover a:hover {
+  color: #fb565a;
+}
+
+.catalog-item-hover a:focus {
+    color: #000000;
+    opacity: 0.3;
+}
+
+
 
 .catalog-item-title {
   font-size: 18px;
@@ -354,6 +354,7 @@ a {
   font-weight: 700;
   text-align: center;
 }
+
 
 .catalog-item-description {
   font-size: 16px;
@@ -363,6 +364,8 @@ a {
   text-transform: none;
   color: #666666;
 }
+
+
 
 .button-price {
  font-size: 16px;
@@ -472,33 +475,27 @@ a {
   text-transform: none;
 }
 
-p.modal-write-item {
+.modal-write-item {
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
   text-transform: none;
 }
 
-lable.text {
+
+.modal-write-form input [type="text"] {
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   text-transform: none;
-  opacity: 0.5;
-}
-
-.modal-write-form input [type="text"] {
-  font: inherit;
-
-  text-transform: none;
-  color: #bababa;
+  color: #444444;
 
   background-color: #ffffff;
   border: 2px solid #d7dcde;
 }
 
 .modal-write-form input:hover {
-  color: #d3d3d3;
+  color: #444444;
   border-color: #b4b9bb;
 }
 
@@ -514,6 +511,14 @@ lable.text {
 
 .button-send {
    background-color: #fb565a;
+}
+
+.button-send:hover {
+  background-color: #e74246;
+}
+
+.button-send:focus {
+    background-color: #d7373b;
 }
 
 .modal-close {}
