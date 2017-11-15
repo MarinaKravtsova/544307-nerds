@@ -83,9 +83,7 @@ a {
   background-color: #eeeeee;
 }
 
-.slider-container-slide-1 b,
-.slider-container-slide-2 b,
-.slider-container-slide-3 b {
+.slide-title {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -93,9 +91,7 @@ a {
   text-transform: none;
 }
 
-.slider-container-slide-1 p,
-.slider-container-slide-2 p,
-.slider-container-slide-3 p {
+.slide-slogan {
   text-transform: none;
 }
 
@@ -166,7 +162,7 @@ a {
    text-transform: none;
 }
 
-b.orders {
+.orders {
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
@@ -188,7 +184,7 @@ b.orders {
   list-style: none;
 }
 
-p.level {
+.level {
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -196,7 +192,7 @@ p.level {
   text-transform: none;
 }
 
-p.percent {
+.percent {
   font-size: 45px;
   line-height: 10.06px;
   font-weight: 700;
@@ -220,7 +216,7 @@ p.percent {
   background-color: #eeeeee;
 }
 
-h1.title {
+.title {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -229,30 +225,34 @@ h1.title {
   text-align: center;
 }
 
-.products-filters fieldset {
+.products-filters-form fieldset {
   border: none;
 }
 
-.products-filters legend {
+.options {
   font-size: 18px;
   line-height: 30px;
   font-weight: 500;
   color: #000000;
 }
 
-.products-filters-input:hover + label {
+.products-filters-form ul {
+  list-style: none;
+}
+
+.products-filters-form-input:hover + label {
   color: #000000;
 }
-.products-filters-input:focus + label {
+.products-filters-form-input:focus + label {
   color: #283136;
 }
 
-.products-filters-input:disabled + label {
+.products-filters-form-input:disabled + label {
   color: #283136;
   opacity: 0.3;
 }
 
-label.grid {
+.grid {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -260,7 +260,8 @@ label.grid {
   text-transform: none;
 }
 
-button.products-filters.button {
+
+.products-filters-button {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -269,17 +270,17 @@ button.products-filters.button {
   background-color: #eeeeee;
 }
 
-button.products-filters:hover {
+.products-filters-button:hover {
   background-color: #dfdfdf;
 }
 
-button.products-filters:focus {
-  background-color: #dfdfdf;
+.products-filters-button:focus {
+  background-color: #d5d5d5;
   opacity: 0.3;
 }
 
-ul.sort-types,
-ul.sort-up-down {
+.sort-types,
+.sort-up-down {
   list-style: none;
 }
 
@@ -347,15 +348,10 @@ ul.sort-up-down {
   color: #000000;
 }
 
-.sedona-hover h3,
-.pink-hover h3,
-.barbershop-hover h3,
-.mishka-hover h3,
-.aplus-hover h3,
-.kvast-hover h3 {
+.catalog-item-title {
   font-size: 18px;
   line-height: 30px;
-  font-weight: 400;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -368,7 +364,7 @@ ul.sort-up-down {
   color: #666666;
 }
 
-a.button-price {
+.button-price {
  font-size: 16px;
  line-height: 18px;
  color: #ffffff;
@@ -376,11 +372,11 @@ a.button-price {
  background-color: #fb565a;
 }
 
-a.button-price:hover {
+.button-price:hover {
   background-color: #e74246;
 }
 
-a.button-price:focus {
+.button-price:focus {
   background-color: #d7373b;
 }
 
@@ -434,7 +430,7 @@ a.button-price:focus {
   text-transform: none;
 }
 
-.button-writeus {}
+.button-write {}
 
 .footer-social {
   text-align: center;
@@ -464,19 +460,19 @@ a.button-price:focus {
   color: #000000;
 }
 
-.modal-writeus {
+.modal-write {
   color: #000000;
   background-color: #ffffff;
 }
 
-.modal-writeus h2 {
+.modal-write h2 {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
   text-transform: none;
 }
 
-p.modal-writeus-item {
+p.modal-write-item {
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
@@ -491,7 +487,7 @@ lable.text {
   opacity: 0.5;
 }
 
-.modal-writeus-form input [type="text"] {
+.modal-write-form input [type="text"] {
   font: inherit;
 
   text-transform: none;
@@ -501,23 +497,23 @@ lable.text {
   border: 2px solid #d7dcde;
 }
 
-.modal-writeus-form input:hover {
+.modal-write-form input:hover {
   color: #d3d3d3;
   border-color: #b4b9bb;
 }
 
-.modal-writeus-form input:focus {
+.modal-write-form input:focus {
   color: #444444;
   border-color: #000000;
 }
 
-.modal-writeus-form input:invalid {
+.modal-write-form input:invalid {
   color: #e74246;
   border-color: #e74246;
 }
 
-button.button {
+.button-send {
    background-color: #fb565a;
 }
 
-button.modal-close {}
+.modal-close {}
