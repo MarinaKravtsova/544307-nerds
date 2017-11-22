@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/outline.css" rel="stylesheet">
   </head>
 <body class="inner-page">
 
@@ -61,15 +62,15 @@
              <legend class="options">Сетка</legend>
              <ul>
                 <li class="filter-option">
-                   <input  class="visually-hidden products-filters-form-input products-filters-input-radio" type="radio" name="product-group" value="adaptive" id="adaptive-field" checked>
+                   <input  class="visually-hidden products-filters-form-radio" type="radio" name="product-group" value="adaptive" id="adaptive-field" checked>
                    <label class="grid" for="adaptive-field">Адаптивная</label>
                 </li>
                 <li class="filter-option">
-                   <input class="visually-hidden products-filters-form-input products-filters-input-radio" type="radio" name="product-group" value="fixed" id="fixed-field">
+                   <input class="visually-hidden products-filters-form-radio" type="radio" name="product-group" value="fixed" id="fixed-field">
                    <label class="grid" for="fixed-field">Фиксированная</label>
                 </li>
                 <li class="filter-option">
-                   <input class="visually-hidden products-filters-form-input products-filters-input-radio" type="radio" name="product-group" value="rubber" id="rubber-field">
+                   <input class="visually-hidden products-filters-form-radio" type="radio" name="product-group" value="rubber" id="rubber-field">
                    <label class="grid" for="rubber-field">Резиновая</label>
                 </li>
              </ul>
@@ -79,23 +80,23 @@
             <legend class="options">Особенности</legend>
             <ul>
                <li class="filter-option">
-                  <input class="visually-hidden products-filters-form-input products-filters-input-checkbox" type="checkbox" name="slider" id="slider-field" checked>
+                  <input class="visually-hidden products-filters-form-checkbox" type="checkbox" name="slider" id="slider-field" checked>
                   <label class="grid" for="slider-field">Слайдер</label>
                </li>
                <li class="filter-option">
-                  <input class="visually-hidden products-filters-form-input products-filters-input-checkbox" type="checkbox" name="advantageblock" id="advantageblock-field">
+                  <input class="visually-hidden products-filters-form-checkbox" type="checkbox" name="advantageblock" id="advantageblock-field">
                   <label class="grid" for="advantageblock-field">Блок преимуществ</label>
                </li>
                <li class="filter-option">
-                  <input class="visually-hidden products-filters-form-input products-filters-input-checkbox" type="checkbox" name="news" id="news-field" checked>
+                  <input class="visually-hidden products-filters-form-checkbox" type="checkbox" name="news" id="news-field" checked>
                   <label class="grid" for="news-field">Новости</label>
                </li>
                <li class="filter-option">
-                  <input class="visually-hidden products-filters-form-input products-filters-input-checkbox" type="checkbox" name="gallery" id="gallery-field">
+                  <input class="visually-hidden products-filters-form-checkbox" type="checkbox" name="gallery" id="gallery-field">
                   <label class="grid" for="gallery-field">Галерея</label>
                </li>
                <li class="filter-option">
-                  <input class="visually-hidden products-filters-form-input products-filters-input-checkbox" type="checkbox" name="basket" id="basket-field">
+                  <input class="visually-hidden products-filters-form-checkbox" type="checkbox" name="basket" id="basket-field">
                   <label class="grid" for="basket-field">Корзина</label>
                </li>
              </ul>
@@ -104,6 +105,7 @@
             <button class="products-filters-button button" type="submit">Показать</button>
         </form>
    </div>
+   <!-- /products-filters -->
 
    <div class="products-result">
      <div class="sort">
@@ -184,7 +186,7 @@
                 <h3 class="catalog-item-title">Кваст</h3>
               </a>
                 <p class="catalog-item-description">Промо-сайт производителя крафтового кваса</p>
-              <button class="button-price button" type="button">9 900 руб.</button>  
+              <button class="button-price button" type="button">9 900 руб.</button>
             </div>
           </li>
         </ul>
@@ -200,9 +202,11 @@
     </div>
 
    </div>
+   <!-- /products-result -->
 
   </div>
 </div>
+<!-- /products -->
 
 
 <footer class="main-footer">
@@ -254,7 +258,7 @@
 
       <button class="button-send button" type="submit">Отправить</button>
     </form>
-    <button class="modal-close" type="button">Закрыть</button>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
 </div>
 
   </body>

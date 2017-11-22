@@ -1,0 +1,124 @@
+
+
+
+.main-header {
+ outline: red solid 5px;
+}
+
+.container {
+ outline: yellow solid 5px;
+}
+
+.main-navigation {
+ outline: green solid 5px;
+}
+
+.main-header-logo {
+ outline: pink solid 5px;
+}
+
+.site-navigation {
+ outline: blue solid 5px;
+}
+
+
+/*
+.inner-page .main-navigation {
+    outline: blue solid 5px;
+}
+
+.inner-page .user-navigation {
+    outline: blue solid 5px;
+}
+*/
+
+
+
+
+.block-services {
+    outline: red solid 5px;
+}
+
+.services-list {
+    outline: blue solid 5px;
+}
+
+.services-type {
+    outline: green solid 5px;
+}
+
+.container-studio {
+    outline: yellow solid 5px;
+}
+
+.about-description {
+    outline: green solid 5px;
+}
+
+.progress-description {
+    outline: green solid 5px;
+}
+
+.block-studio {
+    outline: red solid 5px;
+}
+
+.block-projects {
+    outline: red solid 5px;
+}
+
+.projects-list {
+    outline: green solid 5px;
+}
+
+.main-footer {
+    outline: red solid 5px;
+}
+
+.container .footer-social {
+    outline: green solid 5px;
+}
+
+.container .container-social {
+    outline: green solid 5px;
+}
+
+.footer-contacts {
+    outline: green solid 5px;
+}
+
+.footer-social {
+    outline: green solid 5px;
+}
+
+.footer-map {
+    outline: green solid 5px;
+}
+
+.block-title {
+    outline: red solid 5px;
+}
+
+.products-filters {
+    outline: green solid 5px;
+}
+
+.sort {
+    outline: green solid 5px;
+}
+
+.products {
+    outline: red solid 5px;
+}
+
+.catalog {
+    outline: green solid 5px;
+}
+
+.catalog-item {
+    outline: blue solid 5px;
+}
+
+.pagination-list {
+    outline: blue solid 5px;
+}
