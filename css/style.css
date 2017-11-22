@@ -188,21 +188,19 @@ a {
   height: 508px;
 }
 
+.services-list-type {
+    margin: 0;
+}
+
 .services-list {
   display: flex;
   justify-content: space-between;
   margin: 0;
   padding-left: 0;
-  padding-right: 68px;
-  padding-top: 81px;
-  padding-bottom: 81px;
 
 
   list-style: none;
 
-
-  /* Временно для сетки */
-  min-height: 350px;
 }
 
 .services-type {
@@ -540,6 +538,10 @@ a {
   list-style: none;
 }
 
+.catalog-list-type {
+     margin: 0;
+}
+
 .catalog-item {
   width: 360;
   margin-bottom: 33px;
@@ -687,6 +689,10 @@ a {
 
   /* Временно для сетки */
   min-height: 420px;
+}
+
+.map {
+    text-align: center;
 }
 
 .footer-contacts {
