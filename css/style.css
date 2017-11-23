@@ -680,52 +680,38 @@ a {
   min-height: 633px;
 }
 
-.container-map-contacts {
-    width: 1160px;
-
-    margin: 0 auto;
-    padding: 0 20px;
-
-    display: flex;
-
+.map {
+    text-align: center;
 }
 
-.container-map-contacts .footer-contacts {
-    width: 325px;
+.map-info {
 
-}
-
-.footer-social-wrapper {
-    width: 1160px;
-    margin: 0 auto;
-    padding: 0 20px;
 
 }
 
 .footer-contacts {
-  width: 230px;
+    width: 300px;
+    height: 300px;
 
-
-  /* Временно для сетки */
-  min-height: 310px;
 }
 
-.map {
-    width: 1440px;
-
-    text-align: center;
+.footer-bottom-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.footer-social-wrapper .footer-social {
-
-    width: 560px;
-     margin: 0 auto;
-     padding: 0 20px;
-}
-
-
-.footer-social-wrapper .container-social {
+.social-links {
     width: 260px;
+
+     margin: 0;
+     padding: 0;
+}
+
+.social-text {
+    width: 560px;
+
      margin: 0 auto;
      padding: 0 20px;
 }
@@ -765,11 +751,11 @@ a {
   min-height: 100px;
 }
 
-.footer-social ul {
+.social-links {
   list-style: none;
 }
 
-.footer-social b {
+.social-text b {
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
@@ -777,7 +763,7 @@ a {
   text-transform: none;
 }
 
-.footer-social p {
+.social-text span {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
@@ -788,6 +774,11 @@ a {
 .social-button {
   color: #000000;
 }
+
+
+
+
+
 
 .modal-write {
   color: #000000;

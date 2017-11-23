@@ -62,39 +62,52 @@
     outline: green solid 5px;
 }
 
+
+
+
+
+
+
+
+
 .main-footer {
     outline: red solid 5px;
 }
 
-.container-map-contacts {
+.map {
     outline: green solid 5px;
 }
 
-
-
-.footer-social-wrapper .footer-social {
-    outline: pink solid 5px;
-}
-
-.footer-social-wrapper  .container-social {
-    outline: pink solid 5px;
-}
 
 .footer-contacts {
     outline: orange solid 5px;
 }
 
-.map {
-    outline: orange solid 5px;
-}
-
-.footer-social-wrapper {
+.footer-bottom {
     outline: blue solid 5px;
 }
 
-.footer-map {
+.footer-bottom-wrapper {
     outline: green solid 5px;
 }
+
+.social-links {
+    outline: pink solid 5px;
+}
+
+.social-text{
+    outline: pink solid 5px;
+}
+
+
+
+
+
+
+
+
+
+
 
 .block-title {
     outline: red solid 5px;
