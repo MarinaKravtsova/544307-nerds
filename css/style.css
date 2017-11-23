@@ -665,6 +665,13 @@ a {
   border: 3px solid #dbdbdb;
 }
 
+
+
+
+
+
+
+
 .main-footer {
   margin-top: 81px;
 
@@ -673,48 +680,64 @@ a {
   min-height: 633px;
 }
 
-.container .footer-contacts {
+.container-map-contacts {
+    width: 1160px;
+
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: flex;
+
+}
+
+.container-map-contacts .footer-contacts {
     width: 325px;
-     margin: 0 auto;
-     padding: 0 20px;
+
 }
 
-.container .container-social {
-    width: 260px;
-     margin: 0 auto;
-     padding: 0 20px;
+.footer-social-wrapper {
+    width: 1160px;
+    margin: 0 auto;
+    padding: 0 20px;
+
 }
 
-.container .footer-social {
+.footer-contacts {
+  width: 230px;
+
+
+  /* Временно для сетки */
+  min-height: 310px;
+}
+
+.map {
+    width: 1440px;
+
+    text-align: center;
+}
+
+.footer-social-wrapper .footer-social {
 
     width: 560px;
      margin: 0 auto;
      padding: 0 20px;
 }
 
+
+.footer-social-wrapper .container-social {
+    width: 260px;
+     margin: 0 auto;
+     padding: 0 20px;
+}
+
+
 .inner-page .main-footer {
   margin-top: 60px;
 }
 
-.footer-map {
-  weight: 1440px;
-  margin: 0;
-
-  /* Временно для сетки */
-  min-height: 420px;
-}
-
-.map {
-    text-align: center;
-}
-
-.footer-contacts {
-  weight: 230px;
 
 
-  /* Временно для сетки */
-  min-height: 310px;
-}
+
 
 
 .footer-contacts b {

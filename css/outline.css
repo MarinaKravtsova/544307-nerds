@@ -66,20 +66,30 @@
     outline: red solid 5px;
 }
 
-.container .footer-social {
+.container-map-contacts {
     outline: green solid 5px;
 }
 
-.container .container-social {
-    outline: green solid 5px;
+
+
+.footer-social-wrapper .footer-social {
+    outline: pink solid 5px;
+}
+
+.footer-social-wrapper  .container-social {
+    outline: pink solid 5px;
 }
 
 .footer-contacts {
-    outline: green solid 5px;
+    outline: orange solid 5px;
 }
 
-.footer-social {
-    outline: green solid 5px;
+.map {
+    outline: orange solid 5px;
+}
+
+.footer-social-wrapper {
+    outline: blue solid 5px;
 }
 
 .footer-map {
