@@ -38,9 +38,7 @@
     outline: green solid 5px;
 }
 
-.container-studio {
-    outline: yellow solid 5px;
-}
+
 
 .about-description {
     outline: green solid 5px;
@@ -63,7 +61,9 @@
 }
 
 
-
+.projects-list li {
+    outline: green solid 5px;
+}
 
 
 
@@ -109,8 +109,9 @@
 
 
 
+
 .block-title {
-    outline: red solid 5px;
+    outline: blue solid 5px;
 }
 
 .products-filters {
