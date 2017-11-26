@@ -53,7 +53,6 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-
 .button {
   display: inline-block;
   font-size: 16px;
@@ -213,14 +212,17 @@ left: 15px;
 .block-slider {
 
   position: relative;
+ background-color: #eeeeee;
+}
 
-  background-color: #eeeeee;
+.block-slider .container {
+     position: relative;
 }
 
 .slider-controls {
   position: absolute;
-  left: 666px;
-  bottom: 110px;
+  left: 552px;
+  bottom: 107px;
   z-index: 100;
 
   height: 18px;
@@ -262,7 +264,7 @@ left: 15px;
   margin: 0;
   padding: 0;
   padding-top: 1px;
-  height: 436px;
+  height: 429px;
   box-sizing: border-box;
 
   list-style: none;
@@ -361,7 +363,7 @@ background-position: 429px 18px;
 
 
 .block-services {
-  padding-top: 75px;
+  padding-top: 80px;
   padding-bottom: 80px;
 }
 
@@ -611,6 +613,27 @@ left: -10px;
     margin-bottom: 0;
 }
 
+.long-line {
+    width: 1160px;
+    height: 2px;
+    border: 0;
+
+    position: center;
+      margin: 0 auto;
+
+    background-color: #eeeeee;
+}
+
+.line {
+    width: 2px;
+    height: 52px;
+    border: 0;
+    background-color: #eeeeee;
+}
+
+.projects-list .line:first-child {
+    display: none;
+}
 
 .block-projects {
     height: 180px;
@@ -646,8 +669,8 @@ left: -10px;
 .block-title {
   background-color: #eeeeee;
   box-sizing: border-box;
-  padding-top: 71px;
-  height: 220px;
+  padding-top: 75px;
+  height: 238px;
 
 
   /* Временно для сетки */
@@ -674,7 +697,7 @@ left: -10px;
   display: flex;
   justify-content: space-between;
 
-  padding-top:  60px;
+  padding-top:  48px;
 }
 
 .products-filters {
@@ -688,10 +711,17 @@ left: -10px;
 .products-filters-form fieldset {
   margin: 0;
   padding: 0;
-
  margin-bottom: 57px;
 
   border: none;
+}
+
+.products-filters-form fieldset:nth-child(2) {
+ margin-bottom: 48px;
+}
+
+.products-filters-form fieldset:nth-child(3) {
+ margin-bottom: 69px;
 }
 
 .range-filter {
@@ -832,21 +862,15 @@ position: relative;
     opacity: 0.3;
 }
 
-/*.products-filters-form-radio,
-.products-filters-form-checkbox {
-    color: #4d4d4d;
-    opacity: 0.4;
-} */
 
-.grid li:hover,
-.products-filters-form-radio:checked + label::after:hover {
-color: red;
-   opacity: 1;
+.products-filters-form-checkbox + label:hover:before,
+.products-filters-form-checkbox:checked + label:hover:after  {
+    opacity: 1;
 }
 
-.products-filters-form-radio:disabled + label,
-.products-filters-form-checkbox:disabled + label {
-  opacity: 0.3;
+.products-filters-form-checkbox + label:disabled:before,
+.products-filters-form-checkbox:checked + label:disabled:after  {
+    opacity: 0.1;
 }
 
 .products-filters-form-checkbox + label::before {
@@ -855,27 +879,27 @@ color: red;
  left: -38px;
 
 
- width: 23px;
- height: 23px;
+ width: 18px;
+ height: 18px;
 
-
- background-image: url("../img/checkbox-off-hover.png");
- background-repeat: no-repeat;
-
+ border: 3px solid #4d4d4d;
+ opacity: 0.4;
+ border-radius: 2px;
 }
 
 .products-filters-form-checkbox:checked + label::after {
   content: "";
 
   position: absolute;
-  left: -38px;
+top: -8px;
+  left: -25px;
 
-  width: 27px;
-  height: 23px;
-
-  background-image: url("../img/checkbox-on-hover.png");
-  background-repeat: no-repeat;
-
+  width: 10px;
+  height: 22px;
+  border-right: 4px solid #4d4d4d;
+   border-bottom: 4px solid #4d4d4d;
+     opacity: 0.4;
+   transform: rotate(45deg);
 }
 
 .products-filters-form-radio + label::before {
@@ -904,10 +928,21 @@ color: red;
   width: 9px;
   height: 9px;
 
-  background-color: #4d4d4d;
+background-color: #4d4d4d;
   opacity: 0.4;
   border-radius: 50%;
 }
+
+.products-filters-form-radio + label:hover:before,
+.products-filters-form-radio:checked + label:hover:after  {
+    opacity: 1;
+}
+
+.products-filters-form-radio + label:disabled:before,
+.products-filters-form-radio:checked + label:disabled:after  {
+    opacity: 0.1;
+}
+
 
 
 
@@ -963,7 +998,7 @@ justify-content: flex-start;
  flex-wrap: wrap;
   padding: 0;
   margin: 0;
-margin-bottom: 6px;
+margin-bottom: 13px;
 
   list-style: none;
 }
@@ -1059,7 +1094,7 @@ margin-bottom: 6px;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  margin-bottom: 48px;
+  margin-bottom: 60px;
 
 
   list-style: none;
@@ -1108,16 +1143,16 @@ margin-bottom: 6px;
 
 .catalog-item {
   width: 360px;
-  height: 616px;
-  padding-top: 8px;
-  margin-bottom: 33px;
+  height: 617px;
+
+  margin-bottom: 32px;
   margin-right: 40px;
 }
 
 .panel {
     width: 360px;
     height: 40px;
-    border-top-radius: 3px;
+    border-radius: 3px 3px 0 0;
     background-color: #4d4d4d;
     opacity: 0.12;
 }
@@ -1222,7 +1257,7 @@ white-space: normal;
 
 .button-price {
 position: absolute;
-top: 135px;
+top: 132px;
 left: 82px;
     display: block;
     margin: 0;
@@ -1278,9 +1313,10 @@ left: 82px;
     box-sizing: border-box;
     width: 50px;
     height: 50px;
+    border-radius: 3px;
 
 text-align: center;
-padding-top: 10px;
+padding-top: 12px;
 
   color: #000000;
 
@@ -1319,7 +1355,7 @@ padding-top: 10px;
 
 
 .main-footer {
-  margin-top: 81px;
+  margin-top: 75px;
 
 
     /* Временно для сетки */
@@ -1336,7 +1372,7 @@ padding-top: 10px;
 
 .map img {
     position: relative;
-    top: -160px;
+    top: -162px;
     left: 5px;
 }
 
