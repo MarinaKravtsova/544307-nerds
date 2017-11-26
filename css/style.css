@@ -108,11 +108,13 @@ input[type="radio"].visually-hidden {
   padding: 23px 20px;
 }
 
-.main-header-logo:hover {
+.main-header-logo:hover,
+.main-navigation-logo:hover {
   opacity: 0.8;
 }
 
-.main-header-logo:active {
+.main-header-logo:active,
+.main-navigation-logo:active {
   opacity: 0.3;
 }
 
@@ -579,9 +581,10 @@ left: -10px;
 .progress-list sup {
    font-size: 25px;
 
-    display: block;
-    padding-left: 77px;
+    right: 7px;
 }
+
+
 
 .level {
   font-size: 16px;
@@ -591,19 +594,20 @@ left: -10px;
   text-transform: none;
 
   display: block;
-  margin-top: 33px;
+  margin-top: 15px;
   margin-bottom: 0;
 }
 
 .percent {
   font-size: 45px;
-  line-height: 10.06px;
+  line-height: 45px;
   font-weight: 700;
   color: #000000;
 
+width: 120px;
+
   display: block;
-  margin-top: 44px;
-  margin-right: 27px;
+  margin-top: 30px;
   margin-bottom: 0;
 }
 
