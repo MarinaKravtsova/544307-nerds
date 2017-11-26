@@ -26,7 +26,7 @@
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
       <div class="user-navigation">
-        <a class="site-navigation" href="basket.html">корзина</a>
+        <a class="site-basket" href="basket.html">корзина</a>
       </div>
     </nav>
 
@@ -71,16 +71,16 @@
              <legend class="options">Сетка</legend>
              <ul>
                 <li class="filter-option">
-                   <input  class="visually-hidden products-filters-form-radio" type="radio" name="product-group" value="adaptive" id="adaptive-field" checked>
-                   <label class="grid" for="adaptive-field">Адаптивная</label>
+                   <input class="visually-hidden products-filters-form-radio" type="radio" name="product-group" value="adaptive" id="adaptive-field" checked>
+                   <label for="adaptive-field">Адаптивная</label>
                 </li>
                 <li class="filter-option">
                    <input class="visually-hidden products-filters-form-radio" type="radio" name="product-group" value="fixed" id="fixed-field">
-                   <label class="grid" for="fixed-field">Фиксированная</label>
+                   <label for="fixed-field">Фиксированная</label>
                 </li>
                 <li class="filter-option">
                    <input class="visually-hidden products-filters-form-radio" type="radio" name="product-group" value="rubber" id="rubber-field">
-                   <label class="grid" for="rubber-field">Резиновая</label>
+                   <label for="rubber-field">Резиновая</label>
                 </li>
              </ul>
           </fieldset>
@@ -90,23 +90,23 @@
             <ul>
                <li class="filter-option">
                   <input class="visually-hidden products-filters-form-checkbox" type="checkbox" name="slider" id="slider-field" checked>
-                  <label class="grid" for="slider-field">Слайдер</label>
+                  <label for="slider-field">Слайдер</label>
                </li>
                <li class="filter-option">
                   <input class="visually-hidden products-filters-form-checkbox" type="checkbox" name="advantageblock" id="advantageblock-field">
-                  <label class="grid" for="advantageblock-field">Блок преимуществ</label>
+                  <label for="advantageblock-field">Блок преимуществ</label>
                </li>
                <li class="filter-option">
                   <input class="visually-hidden products-filters-form-checkbox" type="checkbox" name="news" id="news-field" checked>
-                  <label class="grid" for="news-field">Новости</label>
+                  <label for="news-field">Новости</label>
                </li>
                <li class="filter-option">
                   <input class="visually-hidden products-filters-form-checkbox" type="checkbox" name="gallery" id="gallery-field">
-                  <label class="grid" for="gallery-field">Галерея</label>
+                  <label for="gallery-field">Галерея</label>
                </li>
                <li class="filter-option">
                   <input class="visually-hidden products-filters-form-checkbox" type="checkbox" name="basket" id="basket-field">
-                  <label class="grid" for="basket-field">Корзина</label>
+                  <label for="basket-field">Корзина</label>
                </li>
              </ul>
           </fieldset>
@@ -125,8 +125,8 @@
           <li><a href="name.html">По названию</a></li>
         </ul>
         <ul class="sort-up-down">
-          <li><a href="#" aria-label="Сортировка по возрастанию"></a></li>
-          <li><a href="#" aria-label="Сортировка по убыванию"></a></li>
+          <li class="up"><a href="#" aria-label="Сортировка по возрастанию"></a></li>
+          <li class="down"><a href="#" aria-label="Сортировка по убыванию"></a></li>
         </ul>
      </div>
 
@@ -134,6 +134,13 @@
         <h2 class="visually-hidden">Список сайтов</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
+              <div class="panel">
+                  <ul class="panel-circle">
+                      <li class="circle-1" aria-label="circle-1"></li>
+                      <li class="circle-2" aria-label="circle-2"></li>
+                      <li class="circle-3" aria-label="circle-3"></li>
+                  </ul>
+              </div>
             <figure class="catalog-list-type"><img src="img/img-sedona.png" width="360" height="576" alt="Седона"></figure>
             <div class="catalog-item-hover">
               <a href="catslog-item.html">
@@ -145,6 +152,13 @@
           </li>
 
           <li class="catalog-item">
+              <div class="panel">
+                  <ul class="panel-circle">
+                      <li class="circle-1" aria-label="circle-1"></li>
+                      <li class="circle-2" aria-label="circle-2"></li>
+                      <li class="circle-3" aria-label="circle-3"></li>
+                  </ul>
+              </div>
             <figure class="catalog-list-type"><img src="img/img-pink.png" width="360" height="576" alt="Пинк"></figure>
             <div class="catalog-item-hover">
               <a href="catslog-item.html">
@@ -156,6 +170,13 @@
           </li>
 
           <li class="catalog-item">
+              <div class="panel">
+                  <ul class="panel-circle">
+                      <li class="circle-1" aria-label="circle-1"></li>
+                      <li class="circle-2" aria-label="circle-2"></li>
+                      <li class="circle-3" aria-label="circle-3"></li>
+                  </ul>
+              </div>
             <figure class="catalog-list-type"><img src="img/img-barbershop.png" width="360" height="576" alt="Барбершоп"></figure>
             <div class="catalog-item-hover">
               <a href="catslog-item.html">
@@ -167,6 +188,13 @@
           </li>
 
           <li class="catalog-item">
+              <div class="panel">
+                  <ul class="panel-circle">
+                      <li class="circle-1" aria-label="circle-1"></li>
+                      <li class="circle-2" aria-label="circle-2"></li>
+                      <li class="circle-3" aria-label="circle-3"></li>
+                  </ul>
+              </div>
             <figure class="catalog-list-type"><img src="img/img-mishka.png" width="360" height="576" alt="Мишка"></figure>
             <div class="catalog-item-hover">
               <a href="catslog-item.html">
@@ -178,6 +206,13 @@
           </li>
 
           <li class="catalog-item">
+              <div class="panel">
+                  <ul class="panel-circle">
+                      <li class="circle-1" aria-label="circle-1"></li>
+                      <li class="circle-2" aria-label="circle-2"></li>
+                      <li class="circle-3" aria-label="circle-3"></li>
+                  </ul>
+              </div>
             <figure class="catalog-list-type"><img src="img/img-aplus.png" width="360" height="576" alt="А плюс"></figure>
             <div class="catalog-item-hover">
               <a href="catslog-item.html">
@@ -189,6 +224,13 @@
           </li>
 
           <li class="catalog-item">
+              <div class="panel">
+                  <ul class="panel-circle">
+                      <li class="circle-1" aria-label="circle-1"></li>
+                      <li class="circle-2" aria-label="circle-2"></li>
+                      <li class="circle-3" aria-label="circle-3"></li>
+                  </ul>
+              </div>
             <figure class="catalog-list-type"><img src="img/img-kvast.png" width="360" height="576" alt="Кваст"></figure>
             <div class="catalog-item-hover">
               <a href="catslog-item.html">
@@ -230,7 +272,7 @@
          <h2 class="visually-hidden">Как до нас добраться</h2>
          <b>Nerds design studio</b>
          <p>191186, Санкт-Петербург,<br>
-            ул.Б.Конюшенная, д.19/8<br>
+            ул.Б.Конюшенная, д.19/8<br><br>
             тел.+7(812)275-75-75<br>
             <a class="button button-write button-red" href="writeus.html">Напишите нам</a>
          </p>
