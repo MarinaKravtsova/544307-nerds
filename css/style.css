@@ -184,7 +184,7 @@ input[type="radio"].visually-hidden {
 .site-navigation a {
   display: block;
   padding-top: 27px;
-  padding-right: 48px;
+  margin-right: 46px;
 
   color: #000000;
 }
@@ -198,9 +198,8 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
-.site-navigation-current a {
-  color: #000000;
-  text-decoration: underline red;
+.site-navigation-current a{
+  border-bottom: 2px solid red;
 }
 
 .user-navigation :hover {
