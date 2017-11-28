@@ -288,21 +288,21 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/slider-1.png");
   background-repeat: no-repeat;
   position: absolute;
-  background-position: 429px 18px;
+  background-position: 429px 15px;
 }
 
 .slider-item:nth-child(2) {
   background-image: url("../img/slider-2.png");
   background-repeat: no-repeat;
   position: absolute;
-  background-position: 492px  0px;
+  background-position: 492px -2px;
 }
 
 .slider-item:nth-child(3) {
   background-image: url("../img/slider-3.png");
   background-repeat: no-repeat;
   position: absolute;
-  background-position: 408px  22px;
+  background-position: 408px  17px;
 }
 
 #product-1:checked ~ .slider-list .slider-item:nth-child(1) {
@@ -425,8 +425,7 @@ input[type="radio"].visually-hidden {
   background-color: #fb565a;
 }
 
-.button-red:hover,
-.button-red:focus {
+.button-red:hover {
   background-color: #e74246;
 }
 
@@ -445,9 +444,10 @@ input[type="radio"].visually-hidden {
   background-color: #00bc6c;
 }
 
-.button-green:focus {
+.button-green:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #00aa62;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 .button-yellow {
@@ -458,9 +458,10 @@ input[type="radio"].visually-hidden {
   background-color: #eab534;
 }
 
-.button-yellow:focus {
+.button-yellow:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #e5a722;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 
@@ -831,7 +832,7 @@ input[type="radio"].visually-hidden {
 }
 
 .products-filters-form-checkbox + label:hover:before,
-.products-filters-form-checkbox:checked + label:hover:after  {
+.products-filters-form-checkbox:checked + label:hover:after {
   opacity: 1;
 }
 
@@ -845,10 +846,14 @@ input[type="radio"].visually-hidden {
   position: absolute;
   left: -38px;
 
-  width: 18px;
-  height: 18px;
+  width: 19px;
+  height: 19px;
 
-  border: 3px solid #4d4d4d;
+  opacity: 0.4;
+ /*   background-image: url("../img/checkbox-off-inactive.png");
+    background-repeat: no-repeat;
+    background-position: 0 0; */
+  border: 2px solid #000000;
   opacity: 0.4;
   border-radius: 2px;
 }
@@ -857,15 +862,28 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-  top: -8px;
-  left: -25px;
+  left: -38px;
 
-  width: 10px;
+  width: 27px;
+  height: 23px;
+
+  opacity: 0.4;
+  background-image: url("../img/checkbox-on-hover.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  /* width: 10px;
   height: 22px;
   border-right: 4px solid #4d4d4d;
   border-bottom: 4px solid #4d4d4d;
   opacity: 0.4;
-  transform: rotate(45deg);
+  transform: rotate(45deg); */
+}
+
+{
+    background-image: url("../img/checkbox-on-hover.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .products-filters-form-radio + label::before {
@@ -928,9 +946,10 @@ input[type="radio"].visually-hidden {
   background-color: #dfdfdf;
 }
 
-.products-filters-button:focus {
+.products-filters-button:active {
   color: rgba(0,0,0,0.3);
   background-color: #d5d5d5;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 
@@ -979,51 +998,63 @@ input[type="radio"].visually-hidden {
   padding-right: 275px;
 }
 
-.sort-up-down {
+.up,
+.down {
   position: relative;
 }
 
-.up::after {
-  content: "";
-
+.up a {
   position: absolute;
   top: 17px;
-  right: -53px;
+  right: -50px;
 
-  border: 7px solid transparent;
-  border-top: 10px solid ;
+  width: 11px;
+  height: 10px;
+
+  background-image: url("../img/sort-down.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 
   cursor: pointer;
   user-select: none;
 }
 
-.down::after {
-  content: "";
-
+.down a {
   position: absolute;
-  top: 11px;
-  right: -80px;
+  top: 17px;
+  right: -78px;
 
-  border: 7px solid transparent;
-  border-bottom: 10px solid ;
+  width: 11px;
+  height: 10px;
+
+  background-image: url("../img/sort-up.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 
   cursor: pointer;
   user-select: none;
 }
 
-.sort-up-down li {
-  color: #a6a6a6;
+.sort-up-down a {
   opacity: 0.2;
 }
 
-.sort-up-down li:hover {
+.sort-up-down a:hover {
   opacity: 1;
 }
 
-.sort-up-down li:focus,
-.sort-up-down li:active {
-  color: #231f20;
-  opacity: 1;
+.down a:focus,
+.down a:active {
+  background-image: url("../img/sort-up-active.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.up a:focus,
+.up a:active {
+  background-image: url("../img/sort-down-active.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .sort-types a {
@@ -1203,8 +1234,9 @@ input[type="radio"].visually-hidden {
   background-color: #e74246;
 }
 
-.button-price:focus {
+.button-price:active {
   background-color: #d7373b;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 
@@ -1490,7 +1522,7 @@ input[type="radio"].visually-hidden {
   background-color: #e74246;
 }
 
-.button-send:focus {
+.button-send:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #d7373b;
 }
