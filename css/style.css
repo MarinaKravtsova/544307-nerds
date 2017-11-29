@@ -1285,6 +1285,7 @@ input[type="radio"].visually-hidden {
 .pagination-item a:active {
   color: rgba(0,0,0,0.3);
   background-color: #d5d5d5;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 .pagination-item-current a {
@@ -1449,11 +1450,17 @@ input[type="radio"].visually-hidden {
   border-radius: 50px;
 
   background-color: #e1e1e1;
+
+
 }
 
 .social-button:hover,
 .social-button:focus {
   background-color: #e74246;
+}
+
+.social-button:active {
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 .social-button:active path,
