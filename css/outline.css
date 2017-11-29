@@ -38,9 +38,7 @@
     outline: green solid 5px;
 }
 
-.container-studio {
-    outline: yellow solid 5px;
-}
+
 
 .about-description {
     outline: green solid 5px;
@@ -62,32 +60,58 @@
     outline: green solid 5px;
 }
 
+
+.projects-list li {
+    outline: green solid 5px;
+}
+
+
+
+
+
+
 .main-footer {
     outline: red solid 5px;
 }
 
-.container .footer-social {
+.map {
     outline: green solid 5px;
 }
 
-.container .container-social {
-    outline: green solid 5px;
-}
 
 .footer-contacts {
+    outline: orange solid 5px;
+}
+
+.footer-bottom {
+    outline: blue solid 5px;
+}
+
+.footer-bottom-wrapper {
     outline: green solid 5px;
 }
 
-.footer-social {
-    outline: green solid 5px;
+.social-links {
+    outline: pink solid 5px;
 }
 
-.footer-map {
-    outline: green solid 5px;
+.social-text{
+    outline: pink solid 5px;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 .block-title {
-    outline: red solid 5px;
+    outline: blue solid 5px;
 }
 
 .products-filters {
@@ -111,5 +135,16 @@
 }
 
 .pagination-list {
+    outline: blue solid 5px;
+}
+
+
+
+.panel-circle {
+    outline: blue solid 5px;
+}
+
+
+.catalog-item-hover {
     outline: blue solid 5px;
 }
