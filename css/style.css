@@ -775,6 +775,7 @@ input[type="radio"].visually-hidden {
 
 .price-controls label {
   display: inline-block;
+
   width: 50%;
 
   font-size: 16px;
@@ -1330,6 +1331,8 @@ input[type="radio"].visually-hidden {
   position: relative;
   top: -162px;
   left: 5px;
+
+  background-color: #000000;
 }
 
 .map-info {
