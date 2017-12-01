@@ -1269,6 +1269,7 @@ input[type="radio"].visually-hidden {
 
   overflow: hidden;
   height: 415px;
+
 }
 
 .map img {
@@ -1279,9 +1280,17 @@ input[type="radio"].visually-hidden {
   background-color: #000000;
 }
 
+.map iframe {
+  position: relative;
+  top: -162px;
+  left: 5px;
+
+}
+
 .map-info {
   position: relative;
   top: -741px;
+
 }
 
 .footer-contacts {
@@ -1417,6 +1426,46 @@ input[type="radio"].visually-hidden {
 }
 
 /* modal-write */
+@keyframes animation {
+  0% {
+    transform: translateY(-5000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal-write {
   position: fixed;
 
@@ -1432,7 +1481,19 @@ input[type="radio"].visually-hidden {
 
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
 
-  z-index: 100;
+  z-index: 1000;
+
+  display: none;
+}
+
+.modal-show {
+  display: block;
+
+  animation: animation 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-write h2 {
@@ -1532,6 +1593,8 @@ input[type="radio"].visually-hidden {
   margin-bottom: 20px;
 
   background-color: #fb565a;
+
+  cursor: pointer;
 }
 
 .button-send:hover {
