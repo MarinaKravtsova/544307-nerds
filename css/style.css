@@ -1279,29 +1279,34 @@ input[type="radio"].visually-hidden {
   margin-top: 78px;
 }
 
-.map .container {
-  position: relative;
-  width: 1480px;
-  height: 785px;
-}
-
 .map {
+  position: relative;
   overflow: hidden;
+  width: 1200px;
   height: 416px;
+  margin: auto;
 }
 
 .map img {
   position: absolute;
-  top: -150px;
-  left: 21px;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 
   background-color: #000000;
 }
 
 .map iframe {
   position: absolute;
-  top: -150px;
-  left: 21px;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 
   z-index: 1;
 }
@@ -1309,12 +1314,8 @@ input[type="radio"].visually-hidden {
 .footer-contacts {
   position: absolute;
   top: 54px;
-  left: 159px;
+  left: 20px;
 
-  /* text-align: center;
-
-   min-width: 320px;
-  min-height: 300px; */
   background-color: #ffffff;
   padding-top: 1px;
 
@@ -1364,7 +1365,7 @@ input[type="radio"].visually-hidden {
   display: block;
   margin-top: 50px;
   margin-left: 50px;
-  margin-right: 57px;
+  margin-right: 53px;
 }
 
 .footer-contacts p {
