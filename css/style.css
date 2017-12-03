@@ -1282,34 +1282,37 @@ input[type="radio"].visually-hidden {
 .map {
   position: relative;
   overflow: hidden;
-  width: 1200px;
   height: 416px;
-  margin: auto;
+  text-align: center;
+  background: #000000;
 }
 
-.map img {
+.map-pic {
   position: absolute;
   width: 100%;
+  height: 100%;
   top: 0;
-  bottom: 0;
   left: 0;
-  right: 0;
-  margin: auto;
 
-  background-color: #000000;
+  z-index: 1;
 }
 
 .map iframe {
-  position: absolute;
   width: 100%;
+  height: 100%;
   border: 0;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+}
 
-  z-index: 1;
+.map-content {
+  position: absolute;
+  width: 1200px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+
+  margin: 0 0 0 -600px;
+
+  z-index: 2;
 }
 
 .footer-contacts {
@@ -1317,10 +1320,12 @@ input[type="radio"].visually-hidden {
   top: 54px;
   left: 20px;
 
+  text-align: left;
+
   background-color: #ffffff;
   padding-top: 1px;
 
-  z-index: 5;
+  z-index: 2;
 }
 
 .footer-bottom {
@@ -1379,16 +1384,17 @@ input[type="radio"].visually-hidden {
 
   display: block;
   margin: 0;
-  margin-top: 22px;
+  margin-top: 24px;
   margin-bottom: 37px;
-  margin-left: 51px;
+  margin-left: 50px;
 }
 
 .button-write {
   display: block;
   width: 220px;
-  margin: auto;
-  margin-top: 35px;
+  margin-left: 49px;
+  margin-right: 49px;
+  margin-top: 38px;
   margin-bottom: 47px;
 
   padding: 16px 0;
