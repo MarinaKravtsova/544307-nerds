@@ -4,7 +4,6 @@ body {
   min-height: 2476px;
 }
 
-
 body {
   margin: 0;
   padding: 0;
@@ -73,23 +72,12 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
 }
 
-.long-line {
-  width: 1160px;
-  height: 2px;
-  border: 0;
-
-  position: center;
-  margin: 0 auto;
-
-  background-color: #eeeeee;
-}
-
 .line {
   width: 2px;
   height: 52px;
   border: 0;
   background-color: #eeeeee;
-}
+}  */
 
  /* main-header */
 .main-header {
@@ -354,7 +342,6 @@ input[type="radio"].visually-hidden {
 /* block-services */
 .block-services {
   padding-top: 80px;
-  padding-bottom: 80px;
 }
 
 .services-list-type {
@@ -363,14 +350,18 @@ input[type="radio"].visually-hidden {
 }
 
 .services-list {
-  width: 1100px;
   display: flex;
   justify-content: space-between;
 
   margin: 0 ;
   padding-left: 0;
+  padding-right: 60px;
 
   list-style: none;
+
+  border-bottom: 2px solid #eeeeee;
+
+  padding-bottom: 80px;
 }
 
 .services-type {
@@ -451,7 +442,7 @@ input[type="radio"].visually-hidden {
 }
 
 /* block-studio */
-.block-studio .container {
+.studio-wrapper {
   position: relative;
 
   min-height: 524px;
@@ -459,6 +450,8 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
 
   list-style: none;
+
+  border-bottom: 2px solid #eeeeee;
 }
 
 .description-wrapper{
@@ -589,52 +582,47 @@ input[type="radio"].visually-hidden {
   margin-bottom: 0;
 }
 
-.projects-list .line:first-child {
-  display: none;
-}
-
 /* block-projects */
-.block-projects {
-  height: 172px;
-}
-
 .projects-list {
   height: 180px;
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  margin-top: 10px;
-  margin-left: 30px;
-  margin-right: 43px;
-  padding: 0;
+
   align-items: center;
 
   list-style: none;
 
-  background-image:
-  url("../img/line.png"),
-  url("../img/line.png"),
-  url("../img/line.png");
+  margin: 0;
+  padding: 0;
 
-  background-position: 550px 55px, 250px 55px, 850px 55px;
-  background-repeat: no-repeat;
+  border-bottom: 2px solid #eeeeee;
 }
 
-.projects-list li:nth-child(2) {
-  position: relative;
-  top: -5px;
-  right: 10px;
+.projects-list li::after {
+  content: "";
+  height: 52px;
+  width: 2px;
+  background-color: red;
+  position: absolute;
+  top: 65px;
+  right: 16px;
 }
 
-.projects-list li:nth-child(3) {
-  position: relative;
-  top: -5px;
-  right: 15px;
+.projects-list li:nth-child(4n)::after {
+  display: none;
 }
 
 .projects-list li {
+  display: flex;
+  position: relative;
+  width: 25%;
+  height: 100%;
   list-style: none;
   opacity: 0.2;
+}
+
+.projects-list a {
+  margin: auto;
 }
 
 .projects-list li:hover {
