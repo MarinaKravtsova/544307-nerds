@@ -31,7 +31,7 @@
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
- } else {
+  } else {
     localStorage.setItem("login", login.value);
   }
 });
