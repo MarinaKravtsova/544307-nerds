@@ -16,7 +16,7 @@ body {
   color: #283136;
   text-transform: uppercase;
 
-   background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .inner-page {
@@ -47,7 +47,8 @@ input[type="radio"].visually-hidden {
 
   white-space: nowrap;
 
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -69,7 +70,8 @@ input[type="radio"].visually-hidden {
   width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
  /* main-header */
@@ -85,10 +87,14 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
   color: #000000;
 
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: justify;
+         -ms-flex-pack: justify;
+              justify-content: space-between;
 }
 
 .main-navigation-logo {
@@ -121,9 +127,14 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+     -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 475px;
 }
 
@@ -132,6 +143,8 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   max-width: 160px;
 }
@@ -192,7 +205,8 @@ input[type="radio"].visually-hidden {
 
 .user-navigation-current  {
   color: #000000;
-  text-decoration: underline red;
+  -webkit-text-decoration: underline red;
+          text-decoration: underline red;
 }
 
 /* block-slider */
@@ -346,9 +360,14 @@ input[type="radio"].visually-hidden {
 }
 
 .services-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+     -ms-flex-pack: justify;
+          justify-content: space-between;
 
   margin: 0 ;
   padding-left: 0;
@@ -408,7 +427,8 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #d7373b;
-  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+          box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 .button-green {
@@ -422,7 +442,8 @@ input[type="radio"].visually-hidden {
 .button-green:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #00aa62;
-  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+          box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 .button-yellow {
@@ -436,7 +457,8 @@ input[type="radio"].visually-hidden {
 .button-yellow:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #e5a722;
-  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+          box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 /* block-studio */
@@ -444,8 +466,12 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   min-height: 524px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+     -ms-flex-pack: justify;
+          justify-content: space-between;
 
   list-style: none;
 
@@ -533,8 +559,12 @@ input[type="radio"].visually-hidden {
 }
 
 .progress-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+     -ms-flex-pack: justify;
+          justify-content: space-between;
 
   padding: 0;
 
@@ -542,7 +572,7 @@ input[type="radio"].visually-hidden {
 }
 
 .progress-list sup {
-    position: relative;
+  position: relative;
   font-size: 25px;
 
   right: 11px;
@@ -583,11 +613,17 @@ input[type="radio"].visually-hidden {
 /* block-projects */
 .projects-list {
   min-height: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+     -ms-flex-pack: justify;
+          justify-content: space-between;
 
-  align-items: center;
+  -webkit-box-align: center;
+     -ms-flex-align: center;
+        align-items: center;
 
   list-style: none;
 
@@ -622,6 +658,8 @@ input[type="radio"].visually-hidden {
 }
 
 .projects-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
   width: 25%;
@@ -669,7 +707,8 @@ input[type="radio"].visually-hidden {
 /* block-title */
 .block-title {
   background-color: #eeeeee;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-top: 68px;
   min-height: 231px;
 }
@@ -688,8 +727,12 @@ input[type="radio"].visually-hidden {
 
 /* products */
 .products .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+     -ms-flex-pack: justify;
+          justify-content: space-between;
 
   padding-top:  48px;
 }
@@ -758,7 +801,8 @@ input[type="radio"].visually-hidden {
 
   border: 8px solid #ffffff;
   background-color: #ababab;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  -webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
+          box-shadow: 0 2px 1px 0 #cfcfcf;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -961,16 +1005,22 @@ input[type="radio"].visually-hidden {
 .products-filters-button:active {
   color: rgba(0,0,0,0.3);
   background-color: #d5d5d5;
-  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+          box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 /* products-result */
 /* sort */
 .sort-types ,
 .sort-up-down  {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  -webkit-box-pack: start;
+     -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
   padding: 0;
   margin: 0;
@@ -994,9 +1044,14 @@ input[type="radio"].visually-hidden {
   width: 760px;
   min-height: 73px;
 
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  -webkit-box-pack: start;
+     -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
   padding: 0;
   margin: 0;
@@ -1034,7 +1089,10 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .down a {
@@ -1050,7 +1108,10 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .sort-up-down a {
@@ -1098,8 +1159,11 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
   padding: 0;
   margin: 0;
@@ -1130,7 +1194,6 @@ input[type="radio"].visually-hidden {
   margin-right: 40px;
 
   border-top: 40px solid rgba(77, 77, 77, 0.12);
-
   border-radius: 3px 3px 0 0;
 }
 
@@ -1140,7 +1203,8 @@ input[type="radio"].visually-hidden {
   width: 13px;
   background: #ffffff;
   border-radius: 50%;
-  box-shadow: 24px 0 0 #ffffff, 46px 0 0 #ffffff;
+  -webkit-box-shadow: 24px 0 0 #ffffff, 46px 0 0 #ffffff;
+          box-shadow: 24px 0 0 #ffffff, 46px 0 0 #ffffff;
   position: absolute;
   top: -26px;
   left: 16px;
@@ -1230,13 +1294,17 @@ input[type="radio"].visually-hidden {
 
 .button-price:active {
   background-color: #d7373b;
-  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+          box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 /* pagination */
 .pagination-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
   padding: 0;
   margin: 0;
@@ -1280,7 +1348,8 @@ input[type="radio"].visually-hidden {
 .pagination-item a:active {
   color: rgba(0,0,0,0.3);
   background-color: #d5d5d5;
-  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+          box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 .pagination-item-current a {
@@ -1364,16 +1433,30 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-bottom-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+     -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+     -ms-flex-align: center;
+        align-items: center;
 }
 
 .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+     -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 260px;
   list-style: none;
   margin: 0;
@@ -1462,9 +1545,15 @@ input[type="radio"].visually-hidden {
 }
 
 .social-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+     -ms-flex-align: center;
+        align-items: center;
+  -webkit-box-pack: center;
+     -ms-flex-pack: center;
+          justify-content: center;
   width: 80px;
   height: 80px;
   border-radius: 50px;
@@ -1478,7 +1567,8 @@ input[type="radio"].visually-hidden {
 }
 
 .social-button:active {
-  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+          box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 .social-button:active path,
@@ -1487,28 +1577,55 @@ input[type="radio"].visually-hidden {
 }
 
 /* modal-write */
-@keyframes animation {
+@-webkit-keyframes animation {
   0% {
-    transform: translateY(-5000px);
+    -webkit-transform: translateY(-5000px);
+            transform: translateY(-5000px);
   }
 
   70% {
-    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
   }
 
   90% {
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
 
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
-@keyframes shake {
+@keyframes animation {
+  0% {
+    -webkit-transform: translateY(-5000px);
+            transform: translateY(-5000px);
+  }
+
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
   0%,
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 
   10%,
@@ -1516,14 +1633,41 @@ input[type="radio"].visually-hidden {
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
@@ -1541,7 +1685,8 @@ input[type="radio"].visually-hidden {
   margin: -321px 0 0 -481px;
   padding: 68px 100px 84px 100px;
 
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
 
   z-index: 1000;
 
@@ -1551,11 +1696,13 @@ input[type="radio"].visually-hidden {
 .modal-show {
   display: block;
 
-  animation: animation 0.6s;
+  -webkit-animation: animation 0.6s;
+          animation: animation 0.6s;
 }
 
 .modal-error {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 .modal-write h2 {
@@ -1581,9 +1728,14 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-write-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+     -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .modal-write-form label {
@@ -1604,7 +1756,8 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-write-item .write-item {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 760px;
   height: 118px;
   resize: none;
@@ -1614,7 +1767,8 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-write-form input {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 360px;
 
   padding-top: 14px;
@@ -1644,7 +1798,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-write-form input:hover,
-.modal-write-form textarea:hover  {
+.modal-write-form textarea:hover {
   color: #444444;
   opacity: 0.5;
   border-color: #b4b9bb;
@@ -1682,7 +1836,8 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 0.3);
   background-color: #d7373b;
 
-  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+          box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 .modal-close {
