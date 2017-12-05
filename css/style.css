@@ -158,6 +158,7 @@ input[type="radio"].visually-hidden {
   height: 18px;
 
   background-image: url("../img/cart-icon.svg");
+  background-color: #eeeeee;
   background-repeat: no-repeat;
 }
 
@@ -1189,7 +1190,7 @@ input[type="radio"].visually-hidden {
 
   border-top: 40px solid rgba(77, 77, 77, 0.12);
   border-radius: 3px 3px 0 0;
-  
+
   background-color: #eeeeee;
 }
 
