@@ -1,6 +1,6 @@
 html,
 body {
-  min-width: 1440px;
+  min-width: 1200px;
   min-height: 2476px;
 }
 
@@ -1379,7 +1379,6 @@ input[type="radio"].visually-hidden {
 }
 
 .map {
-  width: 100%;
   position: relative;
   overflow: hidden;
   height: 416px;
