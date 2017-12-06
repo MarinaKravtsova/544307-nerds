@@ -170,6 +170,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation a {
   display: inline-block;
+  vertical-align: middle;
   text-align: center;
   padding-top: 27px;
 
@@ -229,6 +230,7 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   display: inline-block;
+  vertical-align: middle;
   width: 18px;
   height: 18px;
   padding: 8px;
@@ -824,6 +826,7 @@ input[type="radio"].visually-hidden {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: middle;
 
   width: 50%;
 
@@ -884,6 +887,10 @@ input[type="radio"].visually-hidden {
 .filter-option input:disabled + label {
   color: #4d4d4d;
   opacity: 0.3;
+}
+
+.filter-option input:focus + label {
+  color: #71acfa;
 }
 
 .products-filters-form-checkbox + label:hover:before,
@@ -1161,7 +1168,7 @@ input[type="radio"].visually-hidden {
 
   padding: 0;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 27px;
 
   list-style: none;
 }
@@ -1208,11 +1215,6 @@ input[type="radio"].visually-hidden {
 
 .catalog-item:nth-child(2n) {
   margin-right: 0;
-}
-
-.catalog-item:nth-child(5),
-.catalog-item:nth-child(6) {
-  margin-bottom: 0;
 }
 
 .catalog-item-hover {
